@@ -1,0 +1,48 @@
+
+main {
+    background: $colorBackgroundMain;
+    min-height: 100vh;
+    .cds-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 70px 0;
+        & h2 {
+            font-size: 30px;
+            font-family: "Circular Book";
+            color: #FFF;
+        }
+        .cd {
+            display: flex;
+            flex-direction: column;
+            flex-basis: calc((100% / 3) - #{$marginWrapper * 2});
+            padding: 20px;
+            margin: $marginWrapper;
+            height: auto;
+            background-color: $colorBackgroundCds;
+            text-align: center;
+            & img {
+                max-width: 100%;
+                cursor: pointer;
+            }
+            & h2 {
+                margin: 10px 0;
+                color: $colorTitle;
+                font-size: 18px;
+                font-family: $fontTitle;
+                text-transform: uppercase;
+            }
+            & h3 {
+                color: $colorAuthor;
+                font-size: 16px;
+                font-family: $fontAuthor;
+            }
+            & h5 {
+                color: $colorYear;
+                margin-top: 10px;
+                font-size: 14px;
+                font-family: $fontYear;
+            }
+        }
+    }
+}

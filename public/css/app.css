@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "Circular Book";
+  src: url("https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Book.3466e0ec.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Circular Bold";
+  src: url("https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Bold.8d0a45cc.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Circular Light";
+  src: url("https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Light.afd9ab26.woff2") format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 800px;
+}
+
+/* ************************* */
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+::-webkit-scrollbar-track {
+  background-color: #121212;
+}
+
+/* ************************* */
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background-color: #000;
+}
+
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+header .navbar .logo {
+  align-self: center;
+}
+
+header .navbar .logo img {
+  width: 50px;
+}
+
+header .navbar .select select {
+  width: 250px;
+  padding: 5px 35px 5px 5px;
+  font-size: 16px;
+  font-family: "Circular Light";
+  color: #FFF;
+  border: 0;
+  outline: none;
+  height: 30px;
+  background-color: #121212;
+}
+
+main {
+  background: #121212;
+  min-height: 100vh;
+}
+
+main .cds-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 70px 0;
+}
+
+main .cds-container h2 {
+  font-size: 30px;
+  font-family: "Circular Book";
+  color: #FFF;
+}
+
+main .cds-container .cd {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc((100% / 3) - 20px);
+  padding: 20px;
+  margin: 10px;
+  height: auto;
+  background-color: #000;
+  text-align: center;
+}
+
+main .cds-container .cd img {
+  max-width: 100%;
+  cursor: pointer;
+}
+
+main .cds-container .cd h2 {
+  margin: 10px 0;
+  color: #FFF;
+  font-size: 18px;
+  font-family: "Circular Bold";
+  text-transform: uppercase;
+}
+
+main .cds-container .cd h3 {
+  color: gray;
+  font-size: 16px;
+  font-family: "Circular Book";
+}
+
+main .cds-container .cd h5 {
+  color: #4d4d4d;
+  margin-top: 10px;
+  font-size: 14px;
+  font-family: "Circular Light";
+}
+

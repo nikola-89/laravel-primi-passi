@@ -1,0 +1,33 @@
+// ****************************************
+// Header
+// ------
+// Color
+$colorBackgroundHeader: #000;
+// ****************************************
+
+// ****************************************
+// Main
+// ----
+// Color
+$colorBackgroundMain: #121212;
+// Color CDs
+$colorBackgroundCds: #000;
+$colorTitle: #FFF;
+$colorAuthor: darken($colorTitle, 50%);
+$colorYear: darken($colorTitle, 70%);
+// Color Generic
+$colorScrollbar: hsla(0, 0% ,100% , .3);
+// Font CDs
+$defaultFont: "Circular Light";
+$fontTitle: "Circular Bold";
+$fontAuthor: "Circular Book";
+$fontYear: $defaultFont;
+// ****************************************
+
+// ****************************************
+// Size
+// ----
+// Size Wrapper
+$maxWrapperWidthSize: 1100px;
+$marginWrapper: 10px;
+// ****************************************
